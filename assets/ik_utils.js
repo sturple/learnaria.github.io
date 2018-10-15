@@ -12,7 +12,7 @@ ik_utils.keys =  {
 }
 ik_utils.getTransitionEventName = function(){
 	var $elem, events, t, name;
-	
+
 	$elem = $('<div/>');
 	events = {
 		'transition': 'transitionend',
@@ -20,12 +20,12 @@ ik_utils.getTransitionEventName = function(){
 		'MozTransition': 'transitionend',
 		'WebkitTransition': 'webkitTransitionEnd'
 	};
-	
+
 	for (t in events){
 		if ($elem.css(t) !== undefined){
 			name = events[t];
 		}
 	}
-	
+
 	return name;
 }
