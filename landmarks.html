@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<div class="logoutbar">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
+<div class="logoutbar" role="search" aria-label="Search our community website">&nbsp; <input type="text" class="input"><input type="submit" value="search"></div>
 <div class="crumbcontainer">
 		<div id="breadcrumbs" tabindex="0" aria-label="breadcrumb links">&nbsp;</div>
 </div>
@@ -41,10 +41,10 @@
     <div id="lrg_content">
 		<div id="leftcolumn">
 		  <a id="menu"></a>
-		     <div id="side-menu" aria-label="left side menu" accesskey="0">
+		     <div id="side-menu" role="navigation" aria-label="left side menu"  accesskey="0">
 		        <br/>
                 <h2 class="box"><span>Networking</span></h2>
-                <div class="box" id="menu_Networking">
+                <div class="box" id="menu_Networking" >
                     <ul class="social_side_menu" >
                         <li><a href="" class="fake">My Network</a></li>
                         <li><a href="" class="fake">My Contacts</a></li>
@@ -57,7 +57,7 @@
                 </div>
 			<br/>
                 <h2 class="box"><span>People Online</span></h2>
-                <div class="box" id="menu_UsersOnline">
+                <div class="box" id="menu_UsersOnline" >
                     <ul style="padding: 0px; list-style: none;">
                         <li style="padding: 3px 0px;" id="mylogin">No one logged in</li>
                     </ul>
@@ -67,15 +67,15 @@
 		</div>
     </div>	<!-- //end of the left column -->
 
-	<div id="contentcolumn" role="main" aria-label="Join our community form">
-	<div id="message"></div>
+	<div id="contentcolumn" >
+	<div id="message" ></div>
 	<br style="clear:both;">
 	<a id="top"></a>
 
-<div class="profile" >
-<h2>Join our community</h2>
+<div class="profile" role="main" aria-labelledby="mainheading">
+<h2 id="mainheading">Join our community</h2>
 <div id="feedback">&nbsp;</div>
-<form id="join_form">
+<form id="join_form" role="form" aria-label="Join our community form">
 <dl>
 <dt>
 <img src="images/required.gif" height="14" width="14" alt="Required Field" /> denotes required fields.<br />
@@ -86,7 +86,7 @@
 <label for="username">Username:</label><img src="images/required.gif"  alt="Required Field" class="img" />
 </dt>
 <dd><input id="username" class="input" type="text" value="" maxlength="30" size="20" name="username"  aria-required="true" aria-describedby="username_error"><br />
-        <span id="username_error">&nbsp;</span><br />
+        <span id="username_error" >&nbsp;</span><br />
 </dd>
 <dt>
     <label for="password">Password:</label>
@@ -94,7 +94,7 @@
 </dt>
 <dd>
     <input type="text" name="password" size="20" id="password" value="" class="input" /><br />
-    <span id="password_error">&nbsp;</span>
+    <span id="password_error" >&nbsp;</span>
 </dd>
 <dt>
     <label for="email">Email:</label>
@@ -102,7 +102,7 @@
 </dt>
 <dd>
     <input type="text" name="email" size="30" id="email" value="" class="input"/><br />
-    <span id="email_error">&nbsp;</span>
+    <span id="email_error" >&nbsp;</span>
 </dd>
 <dt>
     <label for="fname">First Name:</label>
@@ -157,10 +157,10 @@
     </dt>
     <dd class="state_block">
                 <input type="text" name="state" id="state" maxlength="2" class="input"/>
-                <span id="state_error">&nbsp;</span>
+                <span id="state_error" role="alert">&nbsp;</span>
     </dd>
      <dt class="state_block">
-     <label for="zip">ZIP Code:</label>
+     <label for="zip" >ZIP Code:</label>
      </dt>
      <dd class="state_block">
                     <input type="text" name="zip" id="zip"  class="input"/>
@@ -216,11 +216,11 @@
 
 	</div>
 <div id="advertising" role="complementary" aria-label="Ryerson University Magazine Advertising">
-<h2>Advertising</h2>
-<div>
-<img src="images/rum_cover.jpg" alt="" />
-<br style="clear:both;"/>
-</div>
+    <h2>Advertising</h2>
+    <div>
+        <img src="images/rum_cover.jpg" alt="Ryerson University Magazine Advertising" />
+        <br style="clear:both;"/>
+    </div>
 </div>
 </div>
 
