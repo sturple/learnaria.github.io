@@ -99,20 +99,21 @@
 		$elem = plugin.element;
 		$tabs = plugin.tabs;
 		$panels = plugin.panels;
-
 		$tabs // deselect all tabs
 			.removeClass('selected')
             .attr({
-                'aria-selected': false
+                'aria-selected': false,
+                'tabindex' : -1
             })
 			.blur();
 
 		$($tabs[ind]) // select specified tab
 			.addClass('selected')
             .attr({
-                'aria-selected': true
+                'aria-selected': true,
+                'tabindex' : 0
             });
-		if (event.type) $($tabs[ind]).focus(); // move focus to current tab if reached by mouse or keyboard
+		 $($tabs[ind]).focus(); // move focus to current tab if reached by mouse or keyboard
 
 		$panels // hide all panels
             .attr({
